@@ -1,0 +1,19 @@
+3DS MAX CONFIGURATIONS
+1- System and Display Units have to changed with "Centimeters"
+2- Objects Group Center have to be in 0,0,0
+3- Up Vector Should be "Z-Axis"
+4- Scripting > Run Script
+
+EXCEL CONFIGURATIONS
+1- Open two CSV in Excel or Libre
+2- Copy Index CSV to final column of Transform CSV (including column name)
+3- Save it.
+
+UE4 CONFIGURATIONS
+1- FBX File have to be imported with "Import Into Level" with "Bake Pivot" enabled
+2- A structure have to be created with "Column Names" of saved CSV in Excel.
+
+Note: I created sample functions and Structure 
+but before use it add "SCALEX , SCALEY - SCALEZ" column names to that structure with same column name sorting with CSV.
+
+If you want to use OBJ Index (for numbering objects or etc.) Add also "OBJINDEX" column name to structure.
