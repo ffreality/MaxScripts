@@ -1,0 +1,34 @@
+
+Get Rotation of Object (Type 1)
+  ((coordsys world i.rotation) as string) = It will give eular based rotation value. Not X/Y/Z breaked value.
+  
+Get Rotation of Object (Type 2)
+  rotx = (ffmesh.rotation.x_rotation as string) = It will give breaked value. Developer can change rotation axis.
+ 
+LINKS:
+-- https://forums.cgsociety.org/t/does-anyone-have-this-script/1117404/9
+-- http://help.autodesk.com/view/3DSMAX/2015/ENU/?guid=__files_GUID_C17D0E4B_C408_426B_B300_7E23A0D98515_htm
+
+---------------------------------------------------------------------------------------------------------------
+Get Location of Object (Type 1)
+  posx = (ffmesh.transform.row4.x as string)
+	posy = (ffmesh.transform.row4.y as string)
+	posz = (ffmesh.transform.row4.z as string)
+  
+---------------------------------------------------------------------------------------------------------------
+Save File Dialog
+output_name = getSaveFileName caption:"CSV File" types:"CSV (*.csv)|*.csv|"
+if output_name != undefined then
+	(
+		output_file = createfile output_name
+      -- Code --
+  )
+ 		close output_file
+	)
+
+---------------------------------------------------------------------------------------------------------------
+Write Something To File
+  format "%\n" (Code") to:output_file
+
+-- "," = This write string to next column in CSV
+-- + = This will get next value.
